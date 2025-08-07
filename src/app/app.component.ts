@@ -14,4 +14,6 @@ export class AppComponent {
 schoolName:string="Kunskapsverket";
 email:string="kunskapsverket@hotmail.com";
 year:number=2025;
+
+imgHeader:string="images/header.jpg";
 }
