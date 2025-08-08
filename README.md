@@ -10,4 +10,7 @@
 - Började utforma html-dokumentet och css-filen på "home"-komponeneten som är webbplatsen startsida. Fyllde sidan med innehåll och inkluderade två bilder. 
 - Bytte ut ursprungs faviconen till en egen, som jag utformat från logotypen och konverterat den till ett ico-format.
 - Lade till JSON-filen med de kurser som ska användas i projektet i mappen "Public". 
-- För att få ut JSON-filen med dess data presenterad på sidan, la jag till i app.config.ts: provideHttpClient(). Därefter skapde jag en Service-mapp inkluderade en courses.service.ts fil. Från den filen använde jag httpClient för att göra anrop. Jag gjorde också ett interface som jag la i mappen Model, med namnet: courses-data.ts. Interfacet använder jag sedan tillsammans för att få ut datan som ska visas.  
+- För att få ut JSON-filen med dess data presenterad på sidan, la jag till i app.config.ts: provideHttpClient(). Därefter skapde jag en Service-mapp inkluderade en courses.service.ts fil. Från den filen använde jag httpClient för att göra anrop. Jag gjorde också ett interface som jag la i mappen Model, med namnet: courses-data.ts. Interfacet använder jag sedan tillsammans för att få ut datan som ska visas. 
+- I courselist.component.ts skapade jag varibler en för ursprungslistan från interfacet, därefter varibaler som jag använder i funktioner för filtrering. 
+- En funktion för att filtrerar ut ämnena i ämnesraden så att det valda ämnet med dess innehållande kurser presenteras på sida. 
+- Även filtrering på när textinmatning sker i sökrutan på kurskod eller kursnamn. 
