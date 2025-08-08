@@ -5,7 +5,8 @@ body {
     font-size: 1.2em;
     max-width: 1512px;
     height:auto;
-    margin: auto 0;
+    margin-right:auto;
+    margin-left: auto;
 }
 
 .headlines {
@@ -18,26 +19,27 @@ body {
 }
 
 header {
-    position:relative;
+    position:relative; 
 }
 #img-header{
     max-width:100%; height:auto; 
 }
 
 .logo {
-    width:10%; 
-    height:10%;
-    border-radius: 50%; 
-    border: 2px rgb(255, 254, 254) solid; 
-    margin-bottom: -9.5%;
+    width:100px; 
+    height:auto; 
+    border: 2px black solid; 
+    margin-bottom: -7%;
     margin-left: 3%;
+    border-radius: 50%;
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.7);
     
 }
 /*Navigationmenu*/
 nav {
     background-color: blueviolet;
     box-shadow: 8px 8px 10px rgba(0,0,0,0.7);
-    padding:3%;
+    padding:2%;
     display:flex;
     justify-content: center;
 }
@@ -49,13 +51,15 @@ ul {
     margin:0;
 }
 
-li {background-color: black;
+li {background-color: rgb(175, 64, 235);
     padding:10px;
     display: inline; 
     margin: 0 20px; 
     font-size: 1.3em; 
     font-weight: bold; 
     text-align: center;
+    border: 2px white solid;
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.7);
 }
 
 a {
@@ -70,4 +74,12 @@ nav a:hover {
 nav a.active {
     color: purple; 
     text-decoration: underline; 
+}
+
+footer {
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.7);
+    font-size: 1.2em;
+    background-color: blueviolet;
+    padding:2%;
+    text-align: center;
 }
