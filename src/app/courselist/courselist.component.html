@@ -1,1 +1,36 @@
-<p>courselist works!</p>
+<h3>Kurslista</h3>
+
+<!--Input for the search-function-->
+<label for="search">Sök på vårt kursutbud:</label>
+<br>
+<input type="text" id="searchCourse" placeholder="Här kan du söka kurser..." [(ngModel)]="searchObject">
+<br>
+<br>
+
+<!--To choose subject in the list-->
+<label for="subject">Välj ämne:</label>
+<select id="subject" [(ngModel)]="choosenSub">
+    <option *ngFor="let subject of subjects" [value]="subject">{{subject}}</option>
+</select>
+
+<table>
+    <thead>
+    <tr>
+        <th ><u>Koder:</u></th>
+        <th ><u>Kursnamn:</u></th>
+        <th ><u>Poäng:</u></th>
+        <th ><u>Ämne:</u></th>
+        <th ><u>Kursplan:</u></th>
+    </tr>
+    </thead>
+<tbody>
+    <!--Displayed data from the courseList.-->
+    <tr *ngFor="let course of filteredCourses()">
+        <td id="courseCode">{{ course.courseCode }}</td>
+        <td id="courseName">{{ course.courseName }}</td>
+        <td id="coursePoint">{{ course.points }}</td>
+        <td id="courseSubject">{{ course.subject }}</td>
+        <td id="courseSyllabus">{{ course.syllabus }}</td>
+    </tr>
+</tbody>
+</table>

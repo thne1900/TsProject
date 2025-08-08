@@ -8,7 +8,7 @@ import { CourseData } from '../model/course-data';
 })
 export class CoursesService {
 
-  private url:string="public/miun_courses.json";
+  private url:string="miun_courses.json";
 
   constructor(private http: HttpClient) { }
 
