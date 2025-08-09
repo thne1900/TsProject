@@ -30,8 +30,8 @@
         <td id="courseName">{{ course.courseName }}</td>
         <td id="coursePoint">{{ course.points }}</td>
         <td id="courseSubject">{{ course.subject }}</td>
-        <td><button (click)="WayToSyllabus(course.syllabus)">Kursplanen</button></td>
-        <td><button (click)="AddCourse(course)">Lägg till kursen</button></td>
+        <td><button id="coursePlan" (click)="WayToSyllabus(course.syllabus)">Kursplanen</button></td>
+        <td><button id="addCourse" (click)="AddCourse(course)">Lägg till</button></td>
     </tr>
 </tbody>
 </table>

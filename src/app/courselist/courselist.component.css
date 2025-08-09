@@ -36,9 +36,13 @@ table { text-align: center;
 }
 
 td {color:blanchedalmond;
-    font-size: 1em;
     padding:1%;
 }
+
+#courseCode {font-size: 0.8em;}
+#courseName {font-size: 1em;}
+#coursePoint {font-size: 0.8em;}
+#courseSubject {font-size: 0.9em;}
 
 th {color:blanchedalmond;
     font-size: 1.2em;
@@ -51,8 +55,16 @@ th:hover {
     text-shadow: 4px 4px 8px rgba(0,0,0,0.5);
 }
 
-button {
-    background-color: blue;
-    padding:4%;
+#coursePlan {
+    background-color: rgb(104, 104, 234);
+    padding:6%;
     color: blanchedalmond;
+    font-size: 0.8em;
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.7);
+}
+
+#addCourse {background-color: blue;
+color:blanchedalmond;
+font-size: 0.8em;
+box-shadow: 4px 4px 8px rgba(0,0,0,0.7);
 }
