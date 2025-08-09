@@ -14,3 +14,6 @@
 - I courselist.component.ts skapade jag varibler en för ursprungslistan från interfacet, därefter varibaler som jag använder i funktioner för filtrering. 
 - En funktion för att filtrerar ut ämnena i ämnesraden så att det valda ämnet med dess innehållande kurser presenteras på sida. 
 - Även filtrering på när textinmatning sker i sökrutan på kurskod eller kursnamn. 
+- Vid klick på någon av rubrikerna sorteras raden, och vid tryck igen, växlas sorteringsordningen.
+- Ordnade så att url till kursplanen hamande under en knapp "kursplan" och vid tryck på denna, öppnas kursplanen i nytt fönster. 
+- Skapde en ny service, shedule.service, för att hantera tillägg av kurs till ramschemat. Vid tryck på knapp "Lägg till" hamnar den valda kursen på en ny sida "schedule", där den visas (i en liknande utformad tabell).   
