@@ -19,11 +19,18 @@ export class ScheduleComponent {
 
   //When the component runs, the method is called to get output to the array.
   ngOnInit(){
-    this.scheduledCourses=this.SheduleService.getCourses();
+    this.scheduledCourses=this.SheduleService.getCourses().map(course=>({
+      ...course,
+      favorite:false
+    }));
   }
 
 //Function to access the link to the syllabus.
 WayToSyllabus(url:string) {
   window.open(url,"_blank");
+  }
+
+  toggleFav(course:CourseData) {
+    course.favourite=!course.favourite;
   }
 }

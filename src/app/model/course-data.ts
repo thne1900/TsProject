@@ -4,4 +4,6 @@ export interface CourseData {
    points:number;
    subject:string;
    syllabus:string;
+   
+   favourite:boolean;
 }

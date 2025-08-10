@@ -1,0 +1,52 @@
+
+h3 {text-align: center;
+color:blanchedalmond;
+font-size: 1.4em;}
+
+label {margin-left: 33%;
+    text-align: center;
+    font-size: 0.9em;
+    font-weight: bold;
+    color:blanchedalmond;
+}
+
+table { text-align: center;
+    background-color: purple;
+    margin-left: auto;
+    margin-right: auto;
+    padding:2%;
+    margin-top: 4%;
+    border: 2px blanchedalmond solid;
+    margin-bottom: 4%;
+    box-shadow: 8px 8px 10px rgba(0,0,0,0.7);
+}
+
+td {color:blanchedalmond;
+    padding:1%;
+}
+
+#courseCode {font-size: 0.8em;}
+#courseName {font-size: 1em;}
+#coursePoint {font-size: 0.8em;}
+#courseSubject {font-size: 0.9em;}
+
+th {color:blanchedalmond;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+th:hover {
+    font-size: 1.45em;
+    color:white;
+    text-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+}
+
+button {
+    background-color: rgb(104, 104, 234);
+    padding:6%;
+    color: blanchedalmond;
+    font-size: 0.8em;
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.7);
+}
+
+#star {font-size:1.5em;}
