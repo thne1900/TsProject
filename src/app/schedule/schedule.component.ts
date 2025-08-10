@@ -30,6 +30,7 @@ WayToSyllabus(url:string) {
   window.open(url,"_blank");
   }
 
+  //Function to toggle the favourite-star.
   toggleFav(course:CourseData) {
     course.favourite=!course.favourite;
   }

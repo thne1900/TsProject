@@ -20,6 +20,7 @@
         <td id="coursePoint">{{ course.points }}</td>
         <td id="courseSubject">{{ course.subject }}</td>
         <td><button (click)="WayToSyllabus(course.syllabus)">Kursplanen</button></td>
+        <!--To mark favourite-course-->
          <td><span id="star" (click)="toggleFav(course)">{{course.favourite ?'&starf;':'&star;'}}</span></td>
     </tr>
 </tbody>
