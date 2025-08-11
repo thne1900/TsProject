@@ -64,9 +64,10 @@ th:hover {
     cursor: pointer;
 }
 
-#addCourse {background-color: blue;
+button {background-color: blue;
 color:blanchedalmond;
 font-size: 0.8em;
+font-weight: bold;
 box-shadow: 4px 4px 8px rgba(0,0,0,0.7);
 cursor: pointer;
 }
@@ -74,3 +75,5 @@ cursor: pointer;
 #count {text-align: center;
 color:blanchedalmond;
 font-size: 1.2em;}
+
+.click-green {background-color: green;}

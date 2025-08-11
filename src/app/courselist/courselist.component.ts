@@ -3,7 +3,7 @@ import { CoursesService } from '../service/courses.service';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { CourseData } from '../model/course-data';
-import { Router } from '@angular/router';
+//import { Router } from '@angular/router';
 import { SheduleService } from '../service/shedule.service';
 
 @Component({
@@ -25,7 +25,7 @@ columnOrder:boolean=true;
 sortedCourses:CourseData[]=[];
 addedCourses:CourseData[]=[];
 
-constructor(private CoursesService: CoursesService, private router: Router, private SheduleService: SheduleService){}
+constructor(private CoursesService: CoursesService, /*private router: Router*/ private SheduleService: SheduleService){}
 
 //Retrieves the course when the component runs.
 ngOnInit(){
@@ -108,5 +108,9 @@ AddCourse(course:CourseData) {
 //Function to disply current number.
 currentDisplayedCourses():number{
   return this.filteredCourses().length;
+}
+
+courseAdded(course:CourseData):boolean{
+  return this.addedCourses.includes(course);
 }
 }

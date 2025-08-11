@@ -34,7 +34,7 @@
         <td id="coursePoint">{{ course.points }}</td>
         <td id="courseSubject">{{ course.subject }}</td>
         <td><button id="coursePlan" (click)="WayToSyllabus(course.syllabus)">Kursplanen</button></td>
-        <td><button id="addCourse" (click)="AddCourse(course)">Lägg till</button></td>
+        <td><button [disabled]="courseAdded(course)"[ngClass]="{'click-green':courseAdded(course)}"(click)="AddCourse(course)">{{ courseAdded(course)?'Tillagd':'Lägg till'}}</button></td>
     </tr>
 </tbody>
 </table>
