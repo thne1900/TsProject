@@ -10,8 +10,11 @@
 <!--To choose subject in the list-->
 <label for="subject">Välj ämne:</label>
 <select id="subject" [(ngModel)]="chosenSub">
+    <option value=""disabled selected>Alla kurser</option>
     <option *ngFor="let subject of subjects" [value]="subject">{{subject}}</option>
 </select>
+
+<p id="count"><strong>Antal Kurser:</strong> {{currentDisplayedCourses()}}</p>
 
 <table>
     <thead>

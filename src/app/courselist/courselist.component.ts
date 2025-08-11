@@ -103,6 +103,10 @@ AddCourse(course:CourseData) {
   }
 //Adds course to schedule page.
   this.SheduleService.setCourses(this.addedCourses);
-  this.router.navigate(['/schedule']);
+  //this.router.navigate(['/schedule']);
+}
+//Function to disply current number.
+currentDisplayedCourses():number{
+  return this.filteredCourses().length;
 }
 }
