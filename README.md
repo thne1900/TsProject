@@ -16,7 +16,8 @@
 - Även filtrering på när textinmatning sker i sökrutan på kurskod eller kursnamn. 
 - Vid klick på någon av rubrikerna sorteras raden, och vid tryck igen, växlas sorteringsordningen.
 - Ordnade så att url till kursplanen hamande under en knapp "kursplan" och vid tryck på denna, öppnas kursplanen i nytt fönster. 
-- Skapde en ny service, shedule.service, för att hantera tillägg av kurs till ramschemat. Vid tryck på knapp "Lägg till" hamnar den valda kursen på en ny sida "schedule", där den visas (i en liknande utformad tabell). 
+- Skapde en ny service, shedule.service, för att hantera tillägg av kurs till ramschemat. Vid tryck på knapp "Lägg till" hamnar den valda kursen på en ny sida "schedule", där den visas (i en liknande utformad tabell).
+- Utformade också "lägg till"-knappen vid tillagd kurs, då visar knappen "Tillagd" och blir grön.  
 
 
 
