@@ -11,7 +11,7 @@
  <!--The logotype-->
 <img src="loggo.png" class="logo" alt="Webbplatsens logotyp"> 
 
-<!--The nav.menu (router)-->
+<!--The nav.menu (router), with symbols-->
 <nav> 
     <ul>
         <li><a routerLink="/home" routerLinkActive="active"><i class="fa-solid fa-house"></i> STARTSIDA</a></li>
@@ -21,10 +21,7 @@
 </nav>
 
 
-
 <router-outlet />
-
-
 
 
 <!--The footer-->
@@ -35,7 +32,7 @@
     <br>
     <br>
     <i class="fa-brands fa-square-facebook"></i> & <i class="fa-brands fa-square-instagram"></i></p>
-   <p><strong>© {{ year }}</strong></p>
+   <p id="c"><strong>© {{ year }}</strong></p>
 </footer>
 
 

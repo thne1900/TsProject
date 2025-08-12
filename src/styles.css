@@ -9,6 +9,7 @@ body {
     margin-left: auto;
 }
 
+/*Header including image and headings.*/
 .headlines {
     color:aliceblue; 
     position:absolute; 
@@ -17,7 +18,6 @@ body {
     transform:translate(-50%, -50%); 
     text-align: center;
 }
-
 header {
     position:relative; 
 }
@@ -25,16 +25,18 @@ header {
     max-width:100%; height:auto; 
 }
 
+/*Website logo*/
 .logo {
     width:100px; 
     height:auto; 
-    border: 2px black solid; 
+    border: 2px blanchedalmond solid; 
     margin-bottom: -7%;
     margin-left: 3%;
     border-radius: 50%;
     box-shadow: 4px 4px 8px rgba(0,0,0,0.7);
     
 }
+
 /*Navigationmenu*/
 nav {
     background-color: blueviolet;
@@ -43,15 +45,14 @@ nav {
     display:flex;
     justify-content: center;
 }
-
 ul {
     list-style: none;
     display:flex;
     padding:0;
     margin:0;
 }
-
-li {background-color: rgb(175, 64, 235);
+li {
+    background-color: rgb(175, 64, 235);
     padding:10px;
     display: inline; 
     margin: 0 20px; 
@@ -61,7 +62,6 @@ li {background-color: rgb(175, 64, 235);
     border: 2px white solid;
     box-shadow: 4px 4px 8px rgba(0,0,0,0.7);
 }
-
 a {
     text-decoration: none;
     color:white; 
@@ -70,12 +70,12 @@ a {
 nav a:hover {
     color: purple; 
 } 
-
 nav a.active {
     color: purple; 
     text-decoration: underline; 
 }
 
+/*Website footer*/
 footer {
     box-shadow: 8px 8px 10px rgba(0,0,0,0.7);
     border:4px blanchedalmond solid;
@@ -84,6 +84,38 @@ footer {
     padding:1%;
     text-align: center;
 }
-#schoolName {text-shadow: 4px 4px 8px rgba(253, 252, 252, 0.902);}
-.fa-square-facebook {font-size: 50px;}
-.fa-square-instagram { font-size: 50px;}
+
+#schoolName {
+    text-shadow: 4px 4px 8px rgba(253, 252, 252, 0.902);
+}
+
+/*Social media symbols.*/
+.fa-square-facebook {
+    font-size: 50px;
+}
+.fa-square-instagram { 
+    font-size: 50px;
+}
+
+#c {
+    font-size: 0.8em;
+}
+
+/*Media queries on smaller screen devices*/
+@media (max-width:1024px) {
+    .logo {margin-left: 8%; margin-bottom: -18%;}
+    li {margin:10px; font-size: 1.2em;}
+    ul {flex-direction: column;}
+}
+
+@media (max-width:600px) {
+    .headlines h1 {font-size: 1.4em;}
+    .headlines h2 {font-size: 1.1em;}
+    .logo {width:60px; margin-left:4%; margin-bottom: -20%;}
+    li {font-size: 0.8em; margin:4px;}
+    ul {flex-direction: column;}
+    footer {font-size: 0.8em;}
+    .fa-square-facebook {font-size: 25px;}
+    .fa-square-instagram { font-size: 25px;}
+    #c {font-size: 0.7em;}
+}

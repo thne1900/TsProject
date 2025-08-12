@@ -47,6 +47,9 @@ button {
     color: blanchedalmond;
     font-size: 0.8em;
     box-shadow: 4px 4px 8px rgba(0,0,0,0.7);
+    cursor: pointer;
 }
 
-#star {font-size:1.5em;}
+#star {font-size:1.5em; cursor: pointer;}
+
+.del-button {background-color: rgb(235, 67, 123);}

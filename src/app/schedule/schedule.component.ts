@@ -20,8 +20,8 @@ export class ScheduleComponent {
   //When the component runs, the method is called to get output to the array.
   ngOnInit(){
     this.scheduledCourses=this.SheduleService.getCourses().map(course=>({
-      ...course,
-      favorite:false
+      ...course, 
+      favourite:false
     }));
   }
 
@@ -33,5 +33,10 @@ WayToSyllabus(url:string) {
   //Function to toggle the favourite-star.
   toggleFav(course:CourseData) {
     course.favourite=!course.favourite;
+  }
+
+  
+  deleteCourse(course:CourseData) {
+    this.scheduledCourses=this.scheduledCourses.filter(obj=>obj!==course);
   }
 }
