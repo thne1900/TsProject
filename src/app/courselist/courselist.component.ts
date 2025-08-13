@@ -100,6 +100,8 @@ AddCourse(course:CourseData) {
   if(!this.addedCourses.includes(course)){
     this.addedCourses.push(course);
 
+    this.SheduleService.setCourses(this.addedCourses);
+
   }
 //Adds course to schedule page.
   this.SheduleService.setCourses(this.addedCourses);
