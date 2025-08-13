@@ -17,9 +17,13 @@
 - Vid klick på någon av rubrikerna sorteras raden, och vid tryck igen, växlas sorteringsordningen.
 - Ordnade så att url till kursplanen hamande under en knapp "kursplan" och vid tryck på denna, öppnas kursplanen i nytt fönster. 
 - Skapde en ny service, shedule.service, för att hantera tillägg av kurs till ramschemat. Vid tryck på knapp "Lägg till" hamnar den valda kursen på en ny sida "schedule", där den visas (i en liknande utformad tabell).
-- Utformade också "lägg till"-knappen vid tillagd kurs, då visar knappen "Tillagd" och blir grön.  
+- Utformade också "lägg till"-knappen vid tillagd kurs, då visar knappen "Tillagd" och blir grön. 
+- Hanterade så att antal kurser i listan visas på sidan för kurslistan. Vid valt kursämne ändras antalet till de antal kurser som finns inom det ämnet. 
+- Gjorde så att de tillagda kurserna sparas i LocalStorage när de läggs till i ramschemat. Även vid borttagning sparas den aktuella listan av tillagda kurser samt att vid markering: favorit, sparas också vid ändring. 
 
 
 
 
--EXTRA: Skapade en stjärna (favorit) på de tillagda kurserna, som går att markera och avmarkera, för att kunna hantera sina favoritkurser. 
+-EXTRA: 
+- En extra komponent som representerar webbplatsens startsida. Där det går att läsa vad webbplatsen innehåller och erbjuder, med texter och bilder. 
+- Skapade en stjärna (favorit) på de tillagda kurserna, som går att markera och avmarkera, för att kunna hantera sina favoritkurser. 
