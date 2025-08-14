@@ -20,10 +20,26 @@
 - Utformade också "lägg till"-knappen vid tillagd kurs, då visar knappen "Tillagd" och blir grön. 
 - Hanterade så att antal kurser i listan visas på sidan för kurslistan. Vid valt kursämne ändras antalet till de antal kurser som finns inom det ämnet. 
 - Gjorde så att de tillagda kurserna sparas i LocalStorage när de läggs till i ramschemat. Även vid borttagning sparas den aktuella listan av tillagda kurser samt att vid markering: favorit, sparas också vid ändring. 
-
-
-
+- La till en funktion som visar ramschemats tillagda kurser med sammanlagda högskolepoäng. Vid ändring så uppdateras antal visade poäng. 
+- Uformade komponenterna med styling och responsiv design, både globalt och lokalt på de olika komponenterna. Vid liten skärmenhet på sidorna: courselist och schedule, tog jag bort kolumnen för kursplanen, då det var svårt att få till en snygg utformning, utan att det skulle kännas ihoptryckt eller för liten text. 
 
 -EXTRA: 
 - En extra komponent som representerar webbplatsens startsida. Där det går att läsa vad webbplatsen innehåller och erbjuder, med texter och bilder. 
 - Skapade en stjärna (favorit) på de tillagda kurserna, som går att markera och avmarkera, för att kunna hantera sina favoritkurser. 
+- La till en knapp (töm ditt ramschema) längs ned på sidan för ramschemat för att kunna ha möjligheten att tömma hela listan samtidigt.
+
+## Skriven av: Thne1900, VT 2025.
+
+### Källor:
+
+#### Internet:
+
+#### Bilder:
+- Headerbilden: header.jpg (egentagen).
+- Logotypen: loggo.png (egenskapad).
+- Faviconen: favicon.ico (egenskapad)
+- BILD Bok: Pixabay.(Internet) Clker-Free-Vector-Images.https://pixabay.com/sv/vectors/bok-st%C3%A4ngd-svart-tom-bibliotek-306468/ (2025-08-08.)
+- BILD Abstrakt: Pixabay. (Internet) ArtTower. https://pixabay.com/sv/illustrations/visdom-b%C3%B6cker-utbildning-kunskap-6665661/ 2025-08-08.
+- Bild Uppslagen bok: pixabay. (Internet) karolinagrabowska. https://pixabay.com/sv/photos/ny%C3%A5r-bakgrund-arrang%C3%B6r-kalender-791939/ 2025-08-08.
+
+
