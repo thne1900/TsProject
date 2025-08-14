@@ -69,4 +69,13 @@ WayToSyllabus(url:string) {
     return this.scheduledCourses.reduce((sum, course)=>sum+course.points,0);
   }
 
+  //Function to delete all courses in the list.
+  deleteList(){
+    this.scheduledCourses=[];
+
+    this.savedLocalStorage();
+
+    this.SheduleService.setCourses(this.scheduledCourses);
+  }
+
 }

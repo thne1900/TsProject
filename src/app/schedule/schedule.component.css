@@ -66,10 +66,34 @@ th:hover {
 }
 
 /*favourite-star*/
-#star {font-size:1.5em; cursor: pointer; color: yellow;}
+#star {
+    font-size:1.5em; 
+    cursor: pointer; 
+    color: yellow;
+}
 
 /*Styles on delete button*/
-#del-button {background-color: rgb(235, 67, 123); cursor: pointer;}
+#del-button {
+    background-color: rgb(235, 67, 123); 
+    cursor: pointer;
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.7);
+    color:blanchedalmond;
+}
+
+/*Styles on deleteList button*/
+#del-list {
+    background-color:rgb(235, 67, 123); 
+    cursor: pointer; 
+    padding:1%; 
+    font-size: 1em; 
+    margin-left: 42%;
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.7);
+    color:blanchedalmond;
+    margin-bottom: 8%;
+}
+#del-list:hover {
+    font-weight: bold;
+}
 
 /*Media queries on smaller screen devices*/
 @media (max-width:1024px) {
@@ -81,7 +105,9 @@ th:hover {
     #coursePoint {font-size: 0.7em;}
     #courseSubject {font-size: 0.7em;}  
     #coursePlan {font-size: 0.7em;}
-    button {font-size: 0.7em;}
+    #del-button {font-size: 0.7em;}
+    #del-list {margin-left:40%;}
+
 }
 
 @media (max-width:600px) {
@@ -97,4 +123,5 @@ th:hover {
     #coursePlanHidden {display:none;}
     #del-button {font-size: 0.5em;}
     #star {font-size: 1.2em;}
+    #del-list {font-size: 0.8em; margin-left: 35%;}
 }
