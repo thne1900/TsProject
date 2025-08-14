@@ -10,10 +10,11 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 export class AppComponent {
   title = 'TsProject';
 
-
-schoolName:string="Kunskapsverket";
-email:string="kunskapsverket@hotmail.com";
-year:number=2025;
-
+/*Picture (header)*/
 imgHeader:string="images/header.jpg";
+
+/*Variables for the footer*/
+schoolName:string="Kunskapsverket";
+year:number=2025;
+email:string="thne1900@student.miun.se";
 }

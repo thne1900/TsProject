@@ -77,25 +77,33 @@ nav a.active {
 
 /*Website footer*/
 footer {
-    box-shadow: 8px 8px 10px rgba(0,0,0,0.7);
-    border:4px blanchedalmond solid;
+    box-shadow: 0px -4px 10px rgba(0,0,0,0.7);
     font-size: 1.1em;
     background-color: blueviolet;
     padding:1%;
     text-align: center;
+    color:blanchedalmond;
 }
 
 #schoolName {
-    text-shadow: 4px 4px 8px rgba(253, 252, 252, 0.902);
+    text-shadow: 4px 4px 8px rgba(2, 2, 2, 0.902);
 }
 
 /*Social media symbols.*/
 .fa-square-facebook {
     font-size: 50px;
+    box-shadow: 8px 8px 10px rgba(0,0,0,0.7)
 }
 .fa-square-instagram { 
     font-size: 50px;
+    box-shadow: 8px 8px 10px rgba(0,0,0,0.7)
 }
+
+/*Styles on the mail-addres.*/
+#mail {
+    color:rgb(55, 134, 231); 
+    text-decoration: underline; 
+    font-weight: 700;}
 
 #c {
     font-size: 0.8em;
