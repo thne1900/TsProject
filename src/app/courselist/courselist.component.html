@@ -1,3 +1,5 @@
+<!--HTML.doc for courselist component.-->
+
 <h3>Kurslista</h3>
 
 <!--Input for the search-function-->
@@ -11,29 +13,35 @@
 <label for="subject">Välj ämne:</label>
 <select id="subject" [(ngModel)]="chosenSub">
     <option value=""disabled selected>Alla kurser</option>
-    <option *ngFor="let subject of subjects" [value]="subject">{{subject}}</option>
+    <option *ngFor="let subject of subjects" [value]="subject">{{ subject }}</option>
 </select>
 
-<p id="count"><strong>Antal Kurser:</strong> {{currentDisplayedCourses()}}</p>
+<!--Text output for the number of courses.-->
+<p id="numberOfCourses"><strong>Antal Kurser:</strong> {{ currentDisplayedCourses() }}</p>
 
+
+<!--Table for displayed course list.-->
 <table>
     <thead>
     <tr>
+    <!--Click function for change sorting-->    
         <th (click)="sortSwitch('courseCode')"><u>Koder:</u></th>
         <th (click)="sortSwitch('courseName')"><u>Kursnamn:</u></th>
         <th (click)="sortSwitch('points')"><u>Poäng:</u></th>
         <th (click)="sortSwitch('subject')"><u>Ämne:</u></th>
-        <th (click)="sortSwitch('syllabus')"><u>Kursplan:</u></th>
+        <th id="coursePlanHidden" (click)="sortSwitch('syllabus')"><u>Kursplan:</u></th>
     </tr>
     </thead>
 <tbody>
-    <!--Displayed data from the courseList.-->
+    <!--Displayed data from the courseList (courseData).-->
     <tr *ngFor="let course of filteredCourses()">
         <td id="courseCode">{{ course.courseCode }}</td>
         <td id="courseName">{{ course.courseName }}</td>
         <td id="coursePoint">{{ course.points }}</td>
         <td id="courseSubject">{{ course.subject }}</td>
+    <!--Button to access the syllabus-->
         <td><button id="coursePlan" (click)="WayToSyllabus(course.syllabus)">Kursplanen</button></td>
+    <!--Button to add course, with class to change styling upon addition.-->
         <td><button [disabled]="courseAdded(course)"[ngClass]="{'click-green':courseAdded(course)}"
             (click)="AddCourse(course)">{{ courseAdded(course)?'Tillagd':'Lägg till'}}</button></td>
     </tr>

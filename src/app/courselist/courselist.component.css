@@ -1,14 +1,20 @@
-h3 {text-align: center;
-color:blanchedalmond;
-font-size: 1.4em;}
+/*Styled for the courselist component.*/
 
-label {margin-left: 33%;
+h3 {
+    text-align: center;
+    color:blanchedalmond;
+    font-size: 1.4em;
+}
+
+label {
+    margin-left: 33%;
     text-align: center;
     font-size: 0.9em;
     font-weight: bold;
     color:blanchedalmond;
 }
 
+/*Input field for search.*/
 #searchCourse {
     margin-left: 33%;
     width:30%;
@@ -17,14 +23,24 @@ label {margin-left: 33%;
     box-shadow: 6px 6px 10px rgba(0,0,0,0.5);
 }
 
-#subject {width:32%; 
+/*Design on the select element.*/
+#subject {
+    width:32%; 
     margin-left: 33%; 
     padding:1%;
     box-shadow: 6px 6px 10px rgba(0,0,0,0.5);
 }
 
+/*Display of number of courses.*/
+#numberOfCourses {
+    text-align: center;
+    color:blanchedalmond;
+    font-size: 1.2em;
+}
 
-table { text-align: center;
+/*Table design.*/
+table { 
+    text-align: center;
     background-color: purple;
     margin-left: auto;
     margin-right: auto;
@@ -34,27 +50,36 @@ table { text-align: center;
     margin-bottom: 4%;
     box-shadow: 8px 8px 10px rgba(0,0,0,0.7);
 }
-
-td {color:blanchedalmond;
+td {
+    color:blanchedalmond;
     padding:1%;
 }
-
-#courseCode {font-size: 0.8em;}
-#courseName {font-size: 1em;}
-#coursePoint {font-size: 0.8em;}
-#courseSubject {font-size: 0.9em;}
-
-th {color:blanchedalmond;
+th {
+    color:blanchedalmond;
     font-size: 1.2em;
     cursor: pointer;
 }
-
 th:hover {
     font-size: 1.45em;
     color:white;
     text-shadow: 4px 4px 8px rgba(0,0,0,0.5);
 }
 
+/*Size of the text for the data.*/
+#courseCode {
+    font-size: 0.8em;
+}
+#courseName {
+    font-size: 1em;
+}
+#coursePoint {
+    font-size: 0.8em;
+}
+#courseSubject {
+    font-size: 0.9em;
+}
+
+/*The syllabus button.*/
 #coursePlan {
     background-color: rgb(104, 104, 234);
     padding:6%;
@@ -64,16 +89,49 @@ th:hover {
     cursor: pointer;
 }
 
-button {background-color: blue;
-color:blanchedalmond;
-font-size: 0.8em;
-font-weight: bold;
-box-shadow: 4px 4px 8px rgba(0,0,0,0.7);
-cursor: pointer;
+/*Overall styling for the buttons.*/
+button {
+    background-color: blue;
+    color:blanchedalmond;
+    font-size: 0.8em;
+    font-weight: bold;
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.7);
+    cursor: pointer;
 }
 
-#count {text-align: center;
-color:blanchedalmond;
-font-size: 1.2em;}
+/*Button turns green when course is added.*/
+.click-green {
+    background-color: green;
+}
 
-.click-green {background-color: green;}
+/*Media queries on smaller screen devices*/
+@media (max-width:1024px) {
+    label {font-size: 0.8em;}
+    #numberOfCourses {font-size: 1.1em;}
+    th {font-size: 0.9em;}
+    th:hover {font-size: 1em;} 
+    #courseCode {font-size: 0.7em;}
+    #courseName {font-size: 0.9em;}
+    #coursePoint {font-size: 0.7em;}
+    #courseSubject {font-size: 0.7em;}
+    #coursePlan {font-size: 0.7em;}
+    button {font-size: 0.7em;}
+}
+
+@media (max-width:600px) {
+    #searchCourse {width:50%; margin-left:25%;}
+    #subject {width:53%; margin-left: 25%;}
+    label {margin-left:25%;}
+    #numberOfCourses {font-size: 0.8em;}
+    table {padding:1.5%;}
+    th {font-size: 0.6em;}
+    th:hover {font-size: 0.65em}
+    td {padding:0.5%;}
+    #courseCode {font-size: 0.4em;}
+    #courseName {font-size: 0.55em;}
+    #coursePoint {font-size: 0.4em;}
+    #courseSubject {font-size: 0.5em;}
+    #coursePlan {display:none;}
+    #coursePlanHidden {display:none;}
+    button {font-size: 0.5em;}
+}
