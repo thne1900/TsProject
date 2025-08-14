@@ -1,8 +1,11 @@
+<!--HTML.doc for the schedule component.-->
+
 <h3>Ramschema</h3>
 
 <!--Current showing points-->
 <p id="totalPoints">Total Högskolepoäng:</p>
 
+<!--Table for the added schedule.-->
 <table>
     <thead>
     <tr>
@@ -10,22 +13,22 @@
         <th><u>Kursnamn:</u></th>
         <th><u>Poäng:</u></th>
         <th><u>Ämne:</u></th>
-        <th><u>Kursplan:</u></th>
+        <th id="coursePlanHidden"><u>Kursplan:</u></th>
        
     </tr>
     </thead>
 <tbody>
-    
+    <!--Displayed data on added courses.-->
     <tr *ngFor="let course of scheduledCourses">
-        
         <td id="courseCode">{{ course.courseCode }}</td>
         <td id="courseName">{{ course.courseName }}</td>
         <td id="coursePoint">{{ course.points }}</td>
         <td id="courseSubject">{{ course.subject }}</td>
-        <td><button (click)="WayToSyllabus(course.syllabus)">Kursplanen</button></td>
-         <!--Delete button-->
-        <td><button (click)="deleteCourse(course)" class="del-button">Ta bort kurs</button></td>
-        <!--To mark favourite-course-->
+        <!--Button to access the syllabus.-->
+        <td><button id="coursePlan" (click)="WayToSyllabus(course.syllabus)">Kursplanen</button></td>
+         <!--Button to remove added course.-->
+        <td><button (click)="deleteCourse(course)" id="del-button">Ta bort</button></td>
+        <!--To mark favourite-course with a star-->
          <td><span id="star" (click)="toggleFav(course)">{{course.favourite ?'&starf;':'&star;'}}</span></td>
         </tr>
 </tbody>
