@@ -3,6 +3,7 @@
 
 - Började mitt projektarbete med att starta upp ett nytt Angular-projekt (med namnet TsProject).
 - Rensade bland uppstartsfilerna, med att ta bort demo-text och sådant som inte är relevant i projektet.
+- Skapade ett repo till Github med samma projektnamn, och synkade projektet till webbtjänst Netlify inför publicering. 
 - Skapade de komponenter som jag tänker att mitt projekt ska innehålla, så som: home, courselist, schedule och notfound.
 - Jag har tidigare tänkt ut att mitt färgtema ska gå i blå/lila toner för att jag upplever det färgvalet som inspererande. 
 - Gjorde Paths av komponenterna i app.routes.ts.
@@ -27,6 +28,7 @@
 - En extra komponent som representerar webbplatsens startsida. Där det går att läsa vad webbplatsen innehåller och erbjuder, med texter och bilder. 
 - Skapade en stjärna (favorit) på de tillagda kurserna, som går att markera och avmarkera, för att kunna hantera sina favoritkurser. 
 - La till en knapp (töm ditt ramschema) längs ned på sidan för ramschemat för att kunna ha möjligheten att tömma hela listan samtidigt.
+- Ordnade en länk nere i sidfoten som visuell ska visa att en besökare har möjlighet att kunna skicka mejl. Dock finns ingen underliggande funktion utan enbart för den visuella upplevelsen. Mejladressen som jag lagt in går till min skolmejl. 
 
 ## Skriven av: Thne1900, VT 2025.
 
