@@ -64,4 +64,9 @@ WayToSyllabus(url:string) {
     localStorage.setItem("course", JSON.stringify(this.scheduledCourses));
   }
 
+  //Function to display current course points in the list.*/
+   totalPoints():number {
+    return this.scheduledCourses.reduce((sum, course)=>sum+course.points,0);
+  }
+
 }
