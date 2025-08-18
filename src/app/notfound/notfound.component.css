@@ -15,6 +15,15 @@ p {
     margin-bottom: 8%;
 }
 
+a {font-weight: bold;
+    color:rgb(55, 134, 231);
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 /*Media queries on smaller screen devices*/
 @media (max-width:1024px) {
     h3 {font-size: 1.3em;}

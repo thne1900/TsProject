@@ -20,10 +20,10 @@ courseList: CourseData[]=[]; //Originallist with datainfo.
 subjects:string[]=[]; //List of the subjects
 chosenSub:string=""; // The selected subject being filtered
 searchText:string=""; // The search string
-sortTo:string="course"; //Current sorting.
-columnOrder:boolean=true;
-sortedCourses:CourseData[]=[];
-addedCourses:CourseData[]=[];
+sortTo:string="courseCode"; //Current sorting.
+columnOrder:boolean=true;//Witch sorting order.
+sortedCourses:CourseData[]=[];// The sorted courselist
+addedCourses:CourseData[]=[];//Added courses --> schedule. 
 
 constructor(private CoursesService: CoursesService, /*private router: Router*/ private SheduleService: SheduleService){}
 
