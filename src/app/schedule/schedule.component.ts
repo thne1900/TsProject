@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { SheduleService } from '../service/shedule.service';
 import { CourseData } from '../model/course-data';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-schedule',
   standalone:true,
-  imports: [CommonModule],
+  imports: [CommonModule, FormsModule],
   templateUrl: './schedule.component.html',
   styleUrl: './schedule.component.css'
 })
@@ -53,6 +54,9 @@ WayToSyllabus(url:string) {
   //Function to delete course, and saves the changes.
   deleteCourse(course:CourseData) {
     this.scheduledCourses=this.scheduledCourses.filter(obj=>obj!==course);
+
+    //Alert textbox when a course is deleted. 
+    alert(`Kursen: ${course.courseName} är bortagen från Ditt ramschema`);
     
     this.savedLocalStorage();
 
