@@ -15,8 +15,9 @@ p {
     margin-bottom: 8%;
 }
 
-a {font-weight: bold;
-    color:rgb(55, 134, 231);
+a {
+    font-weight: 500;
+    color:rgb(13, 2, 163);
     cursor: pointer;
 }
 

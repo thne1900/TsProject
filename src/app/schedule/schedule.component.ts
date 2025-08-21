@@ -56,7 +56,7 @@ WayToSyllabus(url:string) {
     this.scheduledCourses=this.scheduledCourses.filter(obj=>obj!==course);
 
     //Alert textbox when a course is deleted. 
-    alert(`Kursen: ${course.courseName} är bortagen från Ditt ramschema`);
+    alert(`Kursen: ${course.courseName} är borttagen från Ditt ramschema`);
     
     this.savedLocalStorage();
 
