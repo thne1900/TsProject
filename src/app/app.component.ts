@@ -11,6 +11,7 @@ export class AppComponent {
   title = 'TsProject';
 
 /*Picture (header)*/
+imgLoggo:string="images/loggo.png";
 imgHeader:string="images/header.jpg";
 
 /*Variables for the footer*/
