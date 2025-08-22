@@ -71,8 +71,10 @@ this.sortedCourses.sort((a,b)=>{
     bValue=bValue.toLowerCase();
   }
 
-  if(aValue<bValue) return this.columnOrder?-1:1;
-  if(aValue>bValue) return this.columnOrder?1:-1;
+  if(aValue<bValue) 
+    return this.columnOrder?-1:1;
+  if(aValue>bValue) 
+    return this.columnOrder?1:-1;
   return 0;
 });
 

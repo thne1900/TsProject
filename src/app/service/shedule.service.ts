@@ -14,7 +14,7 @@ export class SheduleService {
     this.loadLocalStorage();
   }
 
-  //Function for loading data from localStorage.
+  //For loading data from localStorage.
   private loadLocalStorage(){
     const storeData=localStorage.getItem("course");
     if(storeData) {

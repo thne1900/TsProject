@@ -10,7 +10,7 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 export class AppComponent {
   title = 'TsProject';
 
-/*Picture (header)*/
+/*Picture (header & logotype)*/
 imgLoggo:string="images/loggo.png";
 imgHeader:string="images/header.jpg";
 

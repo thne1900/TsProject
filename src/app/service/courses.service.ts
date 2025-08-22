@@ -8,10 +8,12 @@ import { CourseData } from '../model/course-data';
 })
 export class CoursesService {
 
+  //Url to the json-file containing course data
   private url:string="miun_courses.json";
 
   constructor(private http: HttpClient) { }
 
+  //To retrieve course data.
   getCourses(): Observable<CourseData[]> {
     return this.http.get<CourseData[]>(this.url);
   }
