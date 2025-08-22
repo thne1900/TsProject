@@ -36,12 +36,12 @@ export class ScheduleComponent {
     
   }
 
-//Function to access the link to the syllabus.
+//To access the link to the syllabus.
 WayToSyllabus(url:string) {
   window.open(url,"_blank");
   }
 
-  //Function to toggle the favourite-star, and saves changes to localStorage.
+  //To toggle the favourite-star, and saves changes to localStorage.
   toggleFav(course:CourseData) {
     course.favourite=!course.favourite;
     
@@ -51,7 +51,7 @@ WayToSyllabus(url:string) {
     
   }
 
-  //Function to delete course, and saves the changes.
+  //To delete course, and saves the changes.
   deleteCourse(course:CourseData) {
     this.scheduledCourses=this.scheduledCourses.filter(obj=>obj!==course);
 
@@ -68,12 +68,12 @@ WayToSyllabus(url:string) {
     localStorage.setItem("course", JSON.stringify(this.scheduledCourses));
   }
 
-  //Function to display current course points in the list.*/
+  //To display current course points in the list.
    totalPoints():number {
     return this.scheduledCourses.reduce((sum, course)=>sum+course.points,0);
   }
 
-  //Function to delete all courses in the list.
+  //To delete all courses in the list.
   deleteList(){
     this.scheduledCourses=[];
 

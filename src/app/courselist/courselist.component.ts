@@ -3,7 +3,6 @@ import { CoursesService } from '../service/courses.service';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { CourseData } from '../model/course-data';
-//import { Router } from '@angular/router';
 import { SheduleService } from '../service/shedule.service';
 
 @Component({
@@ -25,7 +24,7 @@ columnOrder:boolean=true;//Witch sorting order.
 sortedCourses:CourseData[]=[];// The sorted courselist
 addedCourses:CourseData[]=[];//Added courses --> schedule. 
 
-constructor(private CoursesService: CoursesService, /*private router: Router*/ private SheduleService: SheduleService){}
+constructor(private CoursesService: CoursesService, private SheduleService: SheduleService){}
 
 //Retrieves the course when the component runs.
 ngOnInit(){
@@ -39,7 +38,7 @@ ngOnInit(){
   });
 }
 
-// Function that creates list after filtering.
+//Creates list after filtering.
 filteredCourses():CourseData[] {
   let filteredObj=this.sortedCourses.slice();
  
@@ -59,7 +58,7 @@ if(this.searchText && this.searchText.trim()!=="") {
 return filteredObj;
   }
 
-//Function to sorting the columns.
+//To sorting the columns.
 sortingCourses(){
 this.sortedCourses=this.courseList.slice();
 this.sortedCourses.sort((a,b)=>{
@@ -80,7 +79,7 @@ this.sortedCourses.sort((a,b)=>{
 
 }
 
-//Function that sorts alternately on "click.
+//Sorts alternately on "click.
  sortSwitch(column:string) {
     if(this.sortTo===column){
       this.columnOrder=!this.columnOrder;
@@ -92,12 +91,12 @@ this.sortedCourses.sort((a,b)=>{
     this.sortingCourses();
     }
 
-//Function that, when clicking on "syllabus", opens it on a new page.
+//When clicking on "syllabus", opens it on a new page.
 WayToSyllabus(url:string) {
   window.open(url,"_blank");
 }
 
-//Function to add new course.
+//To add new course.
 AddCourse(course:CourseData) {
   if(!this.addedCourses.includes(course)){
     this.addedCourses.push(course);
@@ -107,13 +106,14 @@ AddCourse(course:CourseData) {
   }
 //Adds course to schedule page.
   this.SheduleService.setCourses(this.addedCourses);
-  //this.router.navigate(['/schedule']);
 }
+
 //Function to disply current number.
 currentDisplayedCourses():number{
   return this.filteredCourses().length;
 }
 
+//Check if course is added.
 courseAdded(course:CourseData):boolean{
   return this.addedCourses.includes(course);
 }

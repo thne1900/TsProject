@@ -36,17 +36,19 @@
 ## Skriven av: Thne1900, VT 2025.
 
 ### Källor:
-
 #### Internet:
 - https://v17.angular.io/guide/binding-syntax (2025-08-08)
-- https://angular.dev/api/common/NgClass (2025-08-10)
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map (2025-08-08)
 - https://howtodoinjava.com/typescript/sets/ (2025-08-08) 
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort (2025-08-08)
+- https://stackoverflow.com/questions/21687907/typescript-sorting-an-array (2025-08-08)
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice (2025-08-08)
+- https://refine.dev/blog/typescript-keyof/#introduction (2025-08-09)
 - https://developer.mozilla.org/en-US/docs/Web/API/Window/open (2025-08-09)
 - https://www.webbdev-essentials.net/html-specialtecken-anvandbara-tecken-att-kanna-till-varfor-det-kan-vara-bra-att-kanna-till-dessa-och-hur-man-kodar-dem-med-html/ 2025-08-10.
-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce (2025-08-14)
+- https://angular.dev/api/common/NgClass (2025-08-10)
 - https://stackoverflow.com/questions/51536262/angular-6-saving-data-to-local-storage (2025-08-13)
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce (2025-08-14)
 
 #### Bilder:
 - Headerbilden: header.jpg (egentagen).
