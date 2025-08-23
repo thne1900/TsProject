@@ -36,6 +36,16 @@
 ## Skriven av: Thne1900, VT 2025.
 
 ### Källor:
+#### Föreläsningar/videodemostrationer:
+- (Föreläsning) JavaScript- Ramverk & Angular. Mattias Dahlgren. 2025-04-14.
+- (Föreläsning) Angular II- HttpClient och services. Mattias Dahlgren 2025-04-28.
+- (Föreläsning) Moment 5-Projekt. Lars Lundin. 2025-05-12.
+- (Video) Angular-Skapa projekt, Mattias Dahlgren, 2025-03-21.
+- (Video) Angular-Skapa webbplats, Mattias Dahlgren, 2024-02-28.
+- (Video) Angular Templats & Databinding, Mattias Dahlgren, 2025-02-11.
+- (Video) Angular-Skapa en kalkylator med Forms och data-bindning, Mattias Dahlgren, 2024-02-29.
+- (Video) Angular- HttpClient , Mattias Dahlgren 2025-02-06.
+
 #### Internet:
 - https://v17.angular.io/guide/binding-syntax (2025-08-08)
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map (2025-08-08)
