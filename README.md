@@ -25,7 +25,7 @@
 - Uformade komponenterna med styling och responsiv design, både globalt och lokalt på de olika komponenterna. Vid liten skärmenhet på sidorna: courselist och schedule, tog jag bort kolumnen för kursplanen, då det var svårt att få till en snygg utformning, utan att det skulle kännas ihoptryckt eller för liten text.
 - Ordnade en länk nere i sidfoten som ska visa att en besökare har möjlighet att kunna skicka mejl. Dock finns ingen underliggande funktionalitet bakom utan enbart för den visuella upplevelsen. Mejladressen som jag lagt in går till min skolmejl.
 - Skapade en fil _redirects som jag placerade i public-mappen, för att allt ska fungera vid publicering. Byggde ihop projektet och publicerade det på webbtjänsten Netlify. Kontrollerade så allt fungerade som tänkt.  
-- Delat den publicerade webbplatsen till en person för återkoppling och feedback på arbetet. Rättade till småfel, la till en alertruta och ändrade design för bättre tillgänglighet (feedbacken noterades i projektrapporten.) 
+- Delat den publicerade webbplatsen till en person för återkoppling och feedback på projektet. Rättade till småfel, la till en alert-ruta och ändrade design för bättre tillgänglighet (hela feedbacken från personen har skrivits i projektrapporten.) 
 
 -EXTRA: 
 - En extra komponent som representerar webbplatsens startsida. Där det går att läsa vad webbplatsen innehåller och erbjuder, med texter och bilder. 
